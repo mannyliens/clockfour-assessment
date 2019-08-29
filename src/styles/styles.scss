@@ -99,7 +99,7 @@ nav {
     padding: 15px 20px 15px 20px;
 }
 
-#faq-item {
+.faq-item {
     display: none;
     padding: 0 25px 0 25px;
 }
@@ -183,10 +183,10 @@ footer {
         #faq {
             margin: 20px 0 0 0;
         }
-        #faq-item {
+        .faq-item {
             margin-top: 35px;
         }
-        #faq-item p {
+        .faq-item p {
             margin: 0%;
         }
     }
@@ -208,31 +208,47 @@ footer {
        nav {
            display: inline-flex;
        }
-       .apply-now {
-        display: inline-flex;
-        margin: 0;
-        padding: 0 35px 0 35px;
-           h5 {
-               margin: 0;
-           }
-       }
    }
 
    .cover-box {
        background: url('../images/hero.jpg') -115px top no-repeat;
        background-color: var(--bg-hero);
        height: 500px;
+       position: relative;
+       text-align: center;
+       padding: 20px 0 20px 0;
+       .hero-mobile-img {
+            display: none;
+        }
        .more-rewards {
            background-color: transparent;
            padding: 0;
            margin: 0;
-       }
-   }
+           text-align: left;
+            img {
+                display: inline-block;
+            }
+        }
+        .row {
+            margin: 0;
+        }
+        .apply-now {
+            padding: 15px 0 0 0;
+            margin: 0;
+            h5 {
+                padding: 0;
+            }
+        }
+    }
 
    .reward-wrapper {
        background: #fff;
        margin: 0px 90px 0 90px;
        padding: 10px 20px 90px 20px;
+       .row {
+            margin-left: 0;
+            margin-right:0;
+        }
        .point-box {
            padding: 35px 0 0 0;
            margin: 0;
@@ -251,10 +267,10 @@ footer {
        #faq {
            margin: 20px 0 0 0;
        }
-       #faq-item {
+       .faq-item {
            margin-top: 35px;
        }
-       #faq-item p {
+       .faq-item p {
            margin: 0;
        }
    }
