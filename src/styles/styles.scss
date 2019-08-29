@@ -1,0 +1,265 @@
+:root {
+    --purple:#592561;
+    --lightgray: #f6f6f6;
+    --darkblue: #0d1e69;
+    --lightblue: #dce4ef;
+    --bg-cover: #4566af;
+    --bg-hero: #eff2e1;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.bg-wrapper {
+    background-image: url('../images/bg.jpg');
+}
+
+nav {
+    display: flex;
+    height: 108px;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cover-box {
+    padding: 30px 0 20px 0;
+    text-align: center;
+    .more-rewards {
+        background-color: var(--lightblue);
+        padding: 20px;
+        margin: 25px 35px 10px 35px;
+        &-subheader-2, &-subheader-3 {
+            color: var(--purple);
+        }
+        img {
+            display: none;
+        }
+    }
+    .row {
+        margin: 0;
+    }
+}
+
+.apply-now {
+    background-color: var(--darkblue);
+    margin: 0 35px 0 35px;
+    h5 {
+        padding: 15px 0 15px 0;
+    }
+
+}
+.point-box {
+    background-color: var(--lightgray);
+    padding: 35px 25px 60px 25px;
+    margin: 20px 35px 0 35px;
+    text-align: center;
+    h4 {
+        color: var(--purple);
+    }
+}
+.bonus-title {
+    margin: 40px 35px 50px 35px;
+    text-align: center; 
+}
+
+.reward-box {
+    margin: 0 35px 0 35px;
+}
+
+
+.card-columns {
+    column-count: 1;
+}
+
+.reward-title {
+    color: var(--purple);
+}
+
+#faq {
+    color: var(--darkblue);
+    font-size:20px;
+    background-color: var(--lightgray);
+    margin: 0 35px 40px 35px;
+    padding: 15px 20px 15px 20px;
+}
+
+#faq-item {
+    display: none;
+    padding: 0 25px 0 25px;
+}
+
+footer {
+    margin-top: 90px;
+    height: 450px;
+    background-color:black;
+    padding: 40px 35px 0 35px;
+}
+
+ @media screen and (min-width:769px) and (max-width:1199px){
+     .container-fluid {
+         background: url('../images/bg.jpg') no-repeat;
+         background-color: var(--bg-cover);
+     }
+    .bg-wrapper {
+        background-image: none;
+        background-color: #fff;
+        margin: 0 90px 0 90px;
+        padding: 0px 20px 0 20px;
+        nav {
+            display: inline-flex;
+        }
+    }
+
+    .cover-box {
+        background: url('../images/hero.jpg') -210px top no-repeat;
+        background-color: var(--bg-hero);
+        height: 500px;
+        position: relative;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        .hero-mobile-img {
+            display: none;
+        }
+        .more-rewards {
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            img {
+                display: inline-block;
+            }
+        }
+        .row {
+            margin: 0;
+        }
+        .apply-now {
+            padding: 15px 0 0 0;
+            margin: 0;
+            h5 {
+                padding: 0;
+            }
+        }
+    }
+
+    .reward-wrapper {
+        background: #fff;
+        margin: 0px 90px 0 90px;
+        padding: 10px 20px 90px 20px;
+        .row {
+            margin-left: 0;
+            margin-right:0;
+        }
+        .point-box {
+            padding: 35px 0 0 0;
+            margin: 0;
+        }
+        .bonus-title {
+            color: black;
+        }
+        .reward-box {
+            margin: 0;
+            padding-bottom: 0;
+        }
+        .card-columns {
+            column-count: 2;
+            column-gap: 2.4rem;
+        }
+        #faq {
+            margin: 20px 0 0 0;
+        }
+        #faq-item {
+            margin-top: 35px;
+        }
+        #faq-item p {
+            margin: 0%;
+        }
+    }
+    footer {
+        margin-top: 0;
+    }
+ }
+
+@media screen and (min-width: 1200px) {
+    .container-fluid {
+        background: url('../images/bg.jpg') no-repeat;
+        background-color: var(--bg-cover);
+    }
+   .bg-wrapper {
+       background-image: none;
+       background-color: #fff;
+       margin: 0 90px 0 90px;
+       padding: 0px 20px 0 20px;
+       nav {
+           display: inline-flex;
+       }
+       .apply-now {
+        display: inline-flex;
+        margin: 0;
+        padding: 0 35px 0 35px;
+           h5 {
+               margin: 0;
+           }
+       }
+   }
+
+   .cover-box {
+       background: url('../images/hero.jpg') -115px top no-repeat;
+       background-color: var(--bg-hero);
+       height: 500px;
+       .more-rewards {
+           background-color: transparent;
+           padding: 0;
+           margin: 0;
+       }
+   }
+
+   .reward-wrapper {
+       background: #fff;
+       margin: 0px 90px 0 90px;
+       padding: 10px 20px 90px 20px;
+       .point-box {
+           padding: 35px 0 0 0;
+           margin: 0;
+       }
+       .bonus-title {
+           color: black;
+       }
+       .reward-box {
+           margin: 0;
+           padding-bottom: 0;
+       }
+       .card-columns {
+           column-count: 2;
+           column-gap: 2.4rem;
+       }
+       #faq {
+           margin: 20px 0 0 0;
+       }
+       #faq-item {
+           margin-top: 35px;
+       }
+       #faq-item p {
+           margin: 0;
+       }
+   }
+   footer {
+       margin-top: 0;
+       padding: 40px 100px 0 100px;
+   }
+}
